@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ProfilePicture from "@/public/Profile.png";
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -52,7 +53,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
+            &#x1F44B;
           </motion.span>
         </div>
       </div>
@@ -62,10 +63,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Salam.</span> I'm a{" "}
+        <span className="font-bold">&#x1F44B; Hello, I'm Salam.</span> I'm a{" "}
         <span className="font-bold">full-stack freelance developer</span>. I
-        love building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        love building <span className="italic">sites &amp; apps</span>. My focus
+        is <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div
