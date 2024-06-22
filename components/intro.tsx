@@ -9,7 +9,7 @@ import { SiUpwork } from "react-icons/si";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import ProfilePicture from "@/public/Profile.png";
+import ProfilePicture from "@/public/Profile.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
